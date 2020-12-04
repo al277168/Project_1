@@ -1,0 +1,33 @@
+﻿@page
+@model Project_1_Restaurant.Pages.Accounts.IndexModel
+@{
+}
+
+<!--Sign Up page-->
+
+<form method="post">
+    <div class="container">
+        <h1>Sign Up</h1>
+        
+        <hr>
+
+        <div>
+            <label><b>Email</b></label>
+            <input asp-for="SignUpUser.Username" type="text" placeholder="Enter Username or Email"  class="form-control"/>
+            
+            
+        </div>
+        
+
+        <div>
+            <label><b>Password</b></label>
+            <input asp-for="SignUpUser.Password" type="password" placeholder="Enter Password" class="form-control"/>
+        </div>
+
+       
+    </div>
+
+    <input type="submit" value="Submit" class="btn btn-outline-primary form-control" />
+
+   
+</form>

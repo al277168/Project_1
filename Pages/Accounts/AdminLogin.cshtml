@@ -1,0 +1,33 @@
+﻿@page
+@model Project_1_Restaurant.Pages.Accounts.AdminLoginModel
+@{
+}
+
+
+
+<form method="post">
+    <div class="container">
+        <h1>Log In </h1>
+        
+        <hr>
+
+        <div>
+            <label for="email"><b>Email</b></label>
+            <input asp-for="SignUpUser.Username" type="text" placeholder="Enter Username or Email"  class="form-control"/>
+            
+            
+        </div>
+        
+
+        <div>
+            <label for="psw"><b>Password</b></label>
+            <input asp-for="SignUpUser.Password" type="password" placeholder="Enter Password" class="form-control"/>
+        </div>
+
+       
+    </div>
+
+    <input asp-pages="EmployeePage" type="button" value="Login" class="btn btn-outline-primary form-control" />
+
+   
+</form>

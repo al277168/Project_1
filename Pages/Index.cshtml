@@ -1,0 +1,56 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<!--The Inex page was already provided an was edited to fit personal interest-->
+
+
+<!--This is a Form for the search bar-->
+<form method="get">
+    <div class="input-group">
+        <input class="form-control" type="text"  asp-for="Products" />
+        <div class="input-group-append">
+            <button type="submit" class="btn-">Search</button>
+        </div>
+    </div>
+</form>
+
+
+<p></p>
+
+<table style="width:100%">
+
+
+
+
+    <!--This loop will print out a row for each product in the database-->
+    @foreach (var item in Model.Products)
+    {
+        <tr>
+           
+                <td>
+           
+                    <h3> @Html.DisplayFor(m => item.Name)</h3>
+                    <p> @Html.DisplayFor(m => item.price)</p>
+                    <form method="post">
+                        <input type="button" name="Add to Cart" value="Add to Cart" />
+                    </form>
+                </td>
+
+           
+        </tr>
+        
+
+
+    }
+
+
+</table>
+
+<!--This link is for the Employee Login Page-->
+<footer>
+    <a class="nav-link text-dark" asp-area="" asp-page="/Accounts/AdminLogin">Admin</a>
+</footer>
+
