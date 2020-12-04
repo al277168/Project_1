@@ -1,0 +1,7 @@
+This system was created using ASP.Net and Razor Pages.
+To learn how to use ASP.NET the tutorial "Learn ASP.NET Core 3.1 - Full Course for Beginners [Tutorial]" from freeCodeCamp.org was followed. 
+Many parts of the code is based on the tutorial.
+The files created were the Accounts folder, CartList folder, Database folder, and the Model folder.
+Everything else was provided from ASP.NET and was changed or removed to fit personal preference.
+
+All Items in the Product database were manually inputed.
